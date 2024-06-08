@@ -1,0 +1,184 @@
+:root{
+
+    /* theme1 */
+    --Very-dark-desaturated-blue-1: hsl(222, 26%, 31%);
+    --Very-dark-desaturated-blue-2: hsl(223, 31%, 20%);
+    --Very-dark-desaturated-blue-3: hsl(224, 36%, 15%);
+  
+    /* keys */
+    --Desaturated-dark-blue1: hsl(225, 21%, 49%);
+    --Desaturated-dark-blue2: hsl(224, 28%, 35%);
+    --Red: hsl(6, 63%, 50%);
+    --Dark-red-key: hsl(6, 70%, 34%);
+    --Light-grayish-orange: hsl(30, 25%, 89%);
+    --Grayish-orange: hsl(28, 16%, 65%);
+  
+    /* text */
+    --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+    --White: hsl(0, 0%, 100%);
+    
+  
+    /* Theme 2 */
+    --Light-gray: hsl(0, 0%, 90%);
+    --Grayish-red: hsl(0, 5%, 81%);
+    --Very-light-gray: hsl(0, 0%, 93%);
+  
+    /* keys */
+    --Dark-moderate-cyan: hsl(185, 42%, 37%);
+    --Very-dark-cyan: hsl(185, 58%, 25%);
+  
+    --Orange: hsl(25, 98%, 40%)   ;
+    --Dark-orange: hsl(25, 99%, 27%);
+  
+    --Light-grayish-yellow : hsl(45, 7%, 89%);
+    --Dark-grayish-orange: hsl(35, 11%, 61%);
+  
+    /* text */
+    
+    --Very-dark-grayish-yellow: hsl(60, 10%, 19%);
+    --White: hsl(0, 0%, 100%);
+  
+  
+  
+    /* ### Theme 3 */
+  
+    /* #### Backgrounds */
+  
+    --Very-dark-violet-main-bg: hsl(268, 75%, 9%);
+    --Very-dark-viole-screen-bg: hsl(268, 71%, 12%);
+  
+    /* #### Keys */
+  
+    --Dark-violet: hsl(281, 89%, 26%);
+    --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+  
+    --Pure-cyan: hsl(176, 100%, 44%);
+    --Soft-cyan: hsl(177, 92%, 70%);
+  
+    --Very-dark-violet: hsl(268, 47%, 21%);
+    --Dark-magenta: hsl(290, 70%, 36%);
+  
+    /* #### Text */
+  
+    --Light-yellow: hsl(52, 100%, 62%);
+    --Very-dark-blue: hsl(198, 20%, 13%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    font-family: "League Spartan";
+}
+body{
+    background-color: var(--Very-dark-desaturated-blue-1);
+}
+body.theme-3{
+    background-color: var(--Very-dark-violet-main-bg);
+}
+.theme-2 h1{
+    color: var(--Desaturated-dark-blue2);
+}
+.theme-3 h1,.theme-3  h2, .theme-3 .theme-num p{
+    color: var(--Light-yellow);
+}
+.theme-2 h2{
+    color: var(--Desaturated-dark-blue2);
+}
+.theme-2 .theme-num p{
+    color: var(--Very-dark-desaturated-blue-2);
+}
+.theme-border{
+    background-color: var(--Very-dark-desaturated-blue-2);
+}
+.theme-2 .theme-border {
+    background-color: var(--Grayish-red);
+}
+.theme-2 .theme-border{
+    background-color: var(--Very-dark-violet);
+}
+.theme-toggle-btn{
+    background-color: var(--Red);
+}
+.theme-3 .theme-toggle-btn{
+    background-color: var(--Light-gray);
+}
+.userInput{
+    background-color: var(--Very-dark-desaturated-blue-3);
+}
+.theme-2 .userInput {
+    background-color: var(--Very-light-gray);
+    color: var(--Very-dark-desaturated-blue-2);
+}
+.theme-3 .userInput{
+    background-color: var(--Very-dark-viole-screen-bg);
+    color: var(--Light-yellow);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.buttons{
+    background-color: var(--Very-dark-desaturated-blue-3);
+}
+.keys{
+    transition: 0.3s ease;
+}
+.theme-2 .keys{
+    background-color: var(--Dark-moderate-cyan);
+    color: var(--Very-dark-grayish-yellow);
+}
+.theme-3 .keys{
+    color: var(--Light-yellow);
+    background-color: var(--Dark-violet);
+    box-shadow: inset 0 -4px 0px 0px var(--Vivid-magenta-key-shadow);
+}
+.theme-2 .keys:hover{
+    color: white;
+}
+.body button{
+    background-color: var(--White);
+    box-shadow: inset 0 -4px 0px 0px rgba(0, 0, 0, 0.5);
+    color: var(--Desaturated-dark-blue2);
+}
+.theme-2 .body button{
+    box-shadow: inset 0 -4px 0px 0px var(--Very-dark-cyan);
+}
+.theme-2 .buttons {
+    background-color: var(--Grayish-red);
+}
+.theme-3 .buttons{
+    background-color: var(--Very-dark-viole-screen-bg);
+}
+#c{
+    background-color: var(--Desaturated-dark-blue1);
+    transition: 0.3s ease;
+}
+.theme-2 #c{
+    background-color: var(--Light-grayish-yellow);
+}
+#c:hover{
+    color: white;
+}
+#del{
+    background-color: var(--Desaturated-dark-blue1);
+    transition: 0.3s ease;
+}
+.theme-2 #del{
+    background-color: var(--Light-grayish-yellow);
+}
+#del:hover{
+    color: white;
+}
+#equal{
+    background-color: var(--Orange);
+    font-size: 1.9rem;
+    transition: 0.3s ease;
+}
+#equal:hover{
+    color: white;
+}
+
+body.theme-2{
+    background-color: var(--Light-gray);
+}

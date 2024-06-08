@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="../public/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="sm:flex w-full">
+  <div class="main h-100vh w-100% sm:w-2/3 sm:ml-auto md:w-6/12 lg:w-4/12 mr-auto">
+    <div class="nav m-8 grid grid-cols-6">
+      <h1 class="font-bold text-4xl col-span-2 text-white">calc</h1>
+      <div class="themes flex gap-2 col-span-4 place-items-center place-content-end">
+        <h2 class="text-white text-sm font-semibold">THEME</h2>
+          <div class="toggle-theme flex flex-col justify-items-center ml-2">
+            <div class="flex justify-center">
+              <div class="theme-num flex gap-4">
+                <p class="text-xs text-white font-semibold">1</p>
+                <p class="text-xs text-white font-semibold">2</p>
+                <p class="text-xs text-white font-semibold">3</p>
+              </div>
+            </div>
+            <div class="theme-border cursor-pointer h-4 w-14 rounded-md ">
+              <div class="h-4 flex flex-col justify-center ml-1"><div class="theme-toggle-btn h-3 w-3 rounded-full duration-200 ease-in cursor-pointer"></div></div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="body h-fit w-100% m-8">
+      <input id="result" class="userInput w-full h-20 text-right rounded-2xl text-white text-2xl font-bold pr-5 outline-0 " type="text">
+      <div class="buttons mt-8 rounded-2xl p-3 grid grid-cols-4 grid-rows-5 place-items-center">
+        <button onclick="calculate(7)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">7</button>
+        <button onclick="calculate(8)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">8</button>
+        <button onclick="calculate(9)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">9</button>
+        <button id="del" onclick="del()" class="del keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">DEL</button>
+        <button onclick="calculate(4)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">4</button>
+        <button onclick="calculate(5)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">5</button>
+        <button onclick="calculate(6)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">6</button>
+        <button onclick="calculate('+')" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">+</button>
+        <button onclick="calculate(1)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">1</button>
+        <button onclick="calculate(2)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">2</button>
+        <button onclick="calculate(3)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">3</button>
+        <button onclick="calculate('-')" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">-</button>
+        <button onclick="calculate('.')" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">.</button>
+        <button onclick="calculate(0)" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">0</button>
+        <button onclick="calculate('/')" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">/</button>
+        <button onclick="calculate('*')" class="keys w-16 h-16 m-3 text-2xl font-bold rounded-lg">x</button>
+        <button id="c" onclick="clearrr()" class="reset-btn keys w-32 h-16 m-3 text-2xl font-bold rounded-lg justify-self-center col-span-2">RESET</button>
+        <button id="equal" onclick="answer()" class="keys res-btn w-32 h-16 m-3 text-2xl font-bold rounded-lg col-span-2">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
+
+
+
+
